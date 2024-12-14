@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+}
+.nav .nav-container {
+  width: 80%;
+}
+.nav .nav-container h2{
+  color:#ff305b;
+}
+.nav-container .links a{
+  text-decoration: none;
+}
+.nav-container .links ul a{
+  color:#fff;
+}
+.nav-container .links ul{
+  list-style: none;
+  padding:0;
+  margin:0;
+}
+.nav-container .links ul li a:hover {
+  color:#ff305b;
+}
+.nav-container .links ul li a#Home{
+  color:#ff305b;
+}
+.home {
+  background-image: url("../Images/hero\ img.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.home .layer {
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.203);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .content {
+  color: white;
+}
+.home .content h1 {
+  color: #ff305b;
+  font-size: 70px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.home .content h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.home .content p {
+  font-family: "Source Sans Pro",sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+@media  (min-width:768px) {
+  .nav .nav-container {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-container .links ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 20px;
+  }
+}

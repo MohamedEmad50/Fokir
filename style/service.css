@@ -1,0 +1,104 @@
+.services{
+  padding-top: 60px;
+  width:100%;
+  text-align: center;
+  background-color: rgba(85, 85, 85, 0.183);
+}
+ .header{
+  position: relative;
+  padding-bottom: 10px;
+  text-align: center;
+}
+ .header::after{
+  content: "";
+  width:20%;
+  height:0.5px;
+  position: absolute;
+  bottom:0;
+  left:40%;
+  right:40%;
+  background-color:#ff305b;
+  
+
+}
+ .header::before{
+  content: "";
+  width:30%;
+  height:0.5px;
+  position: absolute;
+  bottom:10px;
+  left:35%;
+  right:35%;
+  background-color:#ff305b;
+  
+
+}
+
+ h2{
+  margin:0;
+  padding-top:20px;
+  padding-bottom: 30px;
+  
+}
+ .header h2::before{
+  position: absolute;
+  content: "";
+  width:20%;
+  height:0.5px;
+  left:40%;
+  right:40%;
+  background-color: #ff305b;
+  bottom:20px;
+
+}
+.services .skills {
+  padding-top:30px;
+  display: flex;
+  flex-wrap: wrap;
+  width:80%;
+  margin:auto;
+}
+.services .skills .item{
+  padding:35px 25px;
+  width:70%;
+  margin: auto;
+  transition: all 0.15s;
+}
+.services .skills i{
+  color:rgb(255, 48, 91);
+  padding:15px;
+  font-size:30px;
+  transition: font-size 0.15s;
+}
+.services .skills .item:hover{
+  box-shadow: 5px 10px 10px rgba(85, 85, 85, 0.183);
+  background-color: white;
+
+}
+.services .skills .item:hover i{
+  font-size: 35px;
+}
+.services .skills .item h2{
+ 
+}
+
+@media (min-width:768px){
+  .services .skills {
+    width:80%;
+    justify-content: center;
+  }
+  .services .skills .item{
+    width:50%;
+  }
+}
+@media (min-width:990px){
+  .services .skills .item{
+    width:25%;
+  }
+}
+
+@media (min-width:1024px){
+  .services .skills .item {
+    width:25%;
+  }
+}

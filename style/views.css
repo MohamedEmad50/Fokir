@@ -1,0 +1,28 @@
+.views {
+  background-color: rgba(85, 85, 85, 0.15);
+}
+
+.views .container {
+  padding: 60px 0;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+.views .container .view-item {
+  width: 100%;
+}
+.views .container i {
+  color: rgb(255, 48, 91);
+  font-size: 25px;
+}
+
+@media (min-width: 780px) {
+  .views .container {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .views .container .view-item {
+    width: 25%;
+  }
+}

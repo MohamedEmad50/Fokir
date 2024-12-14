@@ -1,0 +1,75 @@
+.portfolio-section {
+  margin-top: 0;
+  padding: 50px 0px;
+}
+.items-section {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+  justify-content: center;
+  gap: 30px;
+}
+.portfolio-section .links {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+.portfolio-section .links button {
+  border: none;
+  background-color: transparent;
+}
+
+.item {
+  width: 100%;
+  position: relative;
+  z-index: 0;
+}
+.item .logo {
+  position: relative;
+  z-index: 2;
+}
+.item .logo img {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+.item .layer {
+  position: absolute;
+  top: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(85, 85, 85, 0.15);
+  z-index: 3;
+  transition: top 0.1;
+  overflow: hidden;
+}
+.item:hover .layer {
+  top: 0;
+}
+.portfolio-section .item:hover i {
+  position: absolute;
+  color: rgb(255, 48, 91);
+  bottom: 20px;
+  right: 20px;
+}
+@media (min-width: 768px) {
+  .item {
+    width: 40%;
+  }
+  .portfolio-section .links {
+    width: 50%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+}
+@media (min-width: 980px) {
+  .item {
+    width: 30%;
+  }
+}
